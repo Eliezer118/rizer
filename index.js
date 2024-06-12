@@ -122,7 +122,7 @@ if(num.action === 'add') {
 mem = num.participants[0]
 
 let buffx = await getBuffer(encodeURI(`https://telegra.ph/file/229166cb3788b34adfe9b.jpg`))
-await ayu.sendMessage(mdata.id, { image: buffx, caption: `@${num.participants[0].split("@")[0]} Bem vindo a A&E Premiações Escolha sua cota e Boa Sorte!`, mentions: [num.participants[0]]}, {quoted: null}).then((res) => console.log(res)).catch((err) => console.log(err))
+await ayu.sendMessage(mdata.id, { image: buffx, caption: `@${num.participants[0].split("@")[0]} Bem vindo ao Grupo A&E Premiações Escolha sua cota e Boa Sorte!`, mentions: [num.participants[0]]}, {quoted: null}).then((res) => console.log(res)).catch((err) => console.log(err))
 //fs.unlinkSync(ranzz)
 //fs.unlinkSync(ran)
 } else if(num.action === 'remove') {
